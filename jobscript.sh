@@ -6,6 +6,12 @@ then
 else
 	echo "Disfruta el planeta humano/a $nombre, trata de no morir."
 fi
+if [ $age >= 18 ]
+then
+    echo "Eres mayor de edad. Edad: $age"
+else
+    echo "Eres menor de edad. Edad: $age"
+fi 
 echo "..."
 sleep 10
 echo "¡Suerte! La necesitarás."
