@@ -10,8 +10,8 @@ job('ejemplo3-job-DSL') {
    		stringParam('nombre', defaultValue = 'Angel', description = 'Parametro de cadena para el Job Booleano')
       	choiceParam('planeta', ['Mercurio', 'Venus', 'Tierrra', 'Marte', 'Jupiter', 'Saturno', 'Urano', 'Neptuno'])
       	booleanParam('agente', false)
-        stringParam('apellido', defaultValue='Javier' description= 'Apellido paterno' )
-    	}
+        stringParam('apellido', defaultValue='Javier', description= 'Apellido paterno' )
+    }
   	triggers {
     		cron('H/2 * * * *')
         	githubPush()
