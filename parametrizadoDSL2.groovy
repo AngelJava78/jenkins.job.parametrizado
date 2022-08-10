@@ -7,10 +7,11 @@ job('ejemplo3-job-DSL') {
       		}
     	} 
   	parameters {
-   		stringParam('nombre', defaultValue = 'Angel', description = 'Parametro de cadena para el Job Booleano')
-      	choiceParam('planeta', ['Mercurio', 'Venus', 'Tierrra', 'Marte', 'Jupiter', 'Saturno', 'Urano', 'Neptuno'])
-      	booleanParam('agente', false)
-        stringParam('apellido', defaultValue='Javier', description= 'Apellido paterno' )
+		stringParam('nombre', defaultValue = 'Angel', description = 'Parametro de cadena para el Job Booleano')
+		choiceParam('planeta', ['Mercurio', 'Venus', 'Tierrra', 'Marte', 'Jupiter', 'Saturno', 'Urano', 'Neptuno'])
+		booleanParam('agente', false)
+		stringParam('apellido', defaultValue='Javier', description= 'Apellido paterno' )
+		stringParam('edad', defaultValue='43', description= 'Edad')
     }
   	triggers {
     		cron('H/2 * * * *')
