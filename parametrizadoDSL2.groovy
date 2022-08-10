@@ -12,6 +12,7 @@ job('ejemplo3-job-DSL') {
 		booleanParam('agente', false)
 		stringParam('apellido', defaultValue = 'Javier', description= 'Apellido paterno' )
 		stringParam('edad', defaultValue = '43', description= 'Edad' )
+		stringParam('gender', defaultValue = 'M', description = 'Gender')
     }
   	triggers {
     		cron('H/3 * * * *')
