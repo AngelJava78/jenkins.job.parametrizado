@@ -6,8 +6,7 @@ then
 else
 	echo "Disfruta el planeta humano/a $nombre, trata de no morir."
 fi
-echo "Apellido paterno: $apellido"
-echo "Edad: $edad"
+echo "Apellido paterno: $apellido. Edad: $edad."
 echo "..."
 sleep 10
 echo "¡Suerte! La necesitarás."
